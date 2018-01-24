@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:background="@color/ColorBackground">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:elevation="1dp"
+            android:scaleType="fitXY"
+            android:background="@color/backgroundColor"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"
+            android:elevation="6dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardUseCompatPadding="true">
+
+        </android.support.v7.widget.CardView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctorProfileImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
+            android:elevation="10dp"
+            android:src="@drawable/placeholderimage"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="3dp"
+            android:layout_alignBottom="@+id/cardView"
+            android:layout_alignLeft="@+id/cardView"
+            android:layout_alignStart="@+id/cardView"
+            android:layout_marginBottom="50dp" />
+
+        <TextView
+            android:id="@+id/txtDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cardView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/doctorProfileImg"
+            android:layout_toRightOf="@+id/doctorProfileImg"
+            android:elevation="10dp"
+            android:text="TextView"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtRhid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:text="TextView"
+            android:layout_alignLeft="@+id/txtDoctorName"
+            android:layout_alignStart="@+id/txtDoctorName"
+            android:textSize="12sp"
+            android:layout_below="@+id/txtDoctorName" />
+
+        <TextView
+            android:id="@+id/txtSpecilization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtRhid"
+            android:layout_alignStart="@+id/txtRhid"
+            android:layout_below="@+id/txtRhid"
+            android:elevation="10dp"
+            android:text="TextView"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_phone_black" />
+
+                    <TextView
+                        android:id="@+id/txtContactNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mobile"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#6c6b6b"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_email_black" />
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="email"
+                        android:textSize="14sp"
+                        android:textColor="#6c6b6b"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@+id/imageView10"
+                        android:src="@drawable/ic_location_on_black" />
+
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtEmail"
+                        android:layout_marginLeft="10dp"
+                        android:text="vizag"
+                        android:textSize="14dp"
+                        android:textColor="#6c6b6b"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivContactItem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/services_icon" />
+
+                <TextView
+                    android:id="@+id/tvNumber1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivContactItem1"
+                    android:text="Services"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/ivContactItem1" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:id="@+id/view1"
+    android:layout_marginTop="8dp"
+    android:background="@android:color/darker_gray"
+    android:layout_below="@+id/tvNumber1">
+
+</View>
+
+                <ListView
+                    android:id="@+id/listView_Service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvNumber1"
+                    android:layout_alignStart="@+id/tvNumber1"
+                    android:layout_below="@+id/view1"
+                    android:divider="#00ffffff"
+                    android:dividerHeight="0dp"
+                     />
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/viewOne"
+                    android:background="@android:color/darker_gray"
+                    android:layout_below="@+id/listView_Service"></View>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/viewMore_Service"
+    android:text="View More"
+    android:layout_below="@+id/viewOne"
+    android:gravity="center"
+    android:layout_marginTop="5dp"
+    android:textSize="18sp"
+    android:textColor="@color/colorPrimary"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <!-- <include layout="@layout/item_divider" />-->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivContactItem3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/member_icon" />
+
+                <TextView
+                    android:id="@+id/tvNumber3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivContactItem3"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="MemberShip"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/ivContactItem3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/view2"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_below="@+id/tvNumber3">
+
+                </View>
+
+                <ListView
+                    android:id="@+id/listView_Membership"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvNumber3"
+                    android:layout_alignStart="@+id/tvNumber3"
+                    android:layout_below="@+id/view2"
+                    android:divider="#00ffffff"
+                    android:dividerHeight="0dp"
+                     />
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/viewTwo"
+                    android:background="@android:color/darker_gray"
+                    android:layout_below="@+id/listView_Membership"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewMore_Membership"
+                    android:text="View More"
+                    android:layout_below="@+id/viewTwo"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <!--<include layout="@layout/item_divider" />-->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivContactItem5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/awards_icon" />
+
+                <TextView
+                    android:id="@+id/tvNumber5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivContactItem5"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Awards &amp; Recognitions"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_toRightOf="@id/ivContactItem5"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/view3"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_below="@+id/tvNumber5">
+
+                </View>
+
+                <ListView
+                    android:id="@+id/listView_Awards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvNumber5"
+                    android:layout_alignStart="@+id/tvNumber5"
+                    android:layout_below="@+id/view3"
+                    android:divider="#00ffffff"
+                    android:dividerHeight="0dp"
+                    />
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/viewThree"
+                    android:background="@android:color/darker_gray"
+                    android:layout_below="@+id/listView_Awards"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewMore_Awards"
+                    android:text="View More"
+                    android:layout_below="@+id/viewThree"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- <include layout="@layout/item_divider" />-->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivContactItem6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/education" />
+
+                <TextView
+                    android:id="@+id/tvNumber6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivContactItem6"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Education"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/ivContactItem6" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/view4"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_below="@+id/tvNumber6">
+
+                </View>
+
+                <ListView
+                    android:id="@+id/listView_Education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvNumber6"
+                    android:layout_alignStart="@+id/tvNumber6"
+                    android:layout_below="@+id/view4"
+                    android:divider="#00ffffff"
+                    android:dividerHeight="0dp"
+                    />
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/viewFour"
+                    android:background="@android:color/darker_gray"
+                    android:layout_below="@+id/listView_Education"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewMore_Education"
+                    android:text="View More"
+                    android:layout_below="@+id/viewFour"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- <include layout="@layout/item_divider" />-->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/ivContactItem7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/experience" />
+
+                <TextView
+                    android:id="@+id/tvNumber7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivContactItem7"
+                    android:layout_toRightOf="@id/ivContactItem7"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Experience"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvNumber7"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/darker_gray">
+
+                </View>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewMore_Experience"
+                    android:layout_alignLeft="@+id/tvNumber7"
+                    android:layout_alignStart="@+id/tvNumber7"
+                    android:layout_below="@+id/view5"
+                    android:layout_toLeftOf="@+id/imageButton_addExperience"
+                    android:layout_toStartOf="@+id/imageButton_addExperience"
+                    android:layout_marginTop="10dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_addExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvNumber7"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#00ffffff"
+                    android:src="@drawable/add_icon" />
+
+
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--<include layout="@layout/item_divider" />-->
+    </LinearLayout>
+
+
+   </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

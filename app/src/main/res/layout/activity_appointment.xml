@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medoske.www.redheal_d.AppointmentActivity"
+    android:orientation="vertical"
+    android:background="@color/ColorBackground">
+
+    <!--<include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_width="match_parent"
+
+        />-->
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipe_refresh_layout"
+    android:background="@color/activity_backgroungColor">
+
+        <com.andexert.expandablelayout.library.ExpandableLayoutListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewAppointments"
+            android:dividerHeight="1dp"
+            android:divider="#00ffffff"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

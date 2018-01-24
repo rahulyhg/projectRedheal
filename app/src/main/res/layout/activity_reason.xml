@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medoske.www.redheal_d.ReasonActivity"
+    android:orientation="vertical"
+    android:background="@color/ColorBackground">
+
+    <!--<include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_width="match_parent"
+
+        />
+-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Please specify the reason for cancelling appointment ?"
+            android:id="@+id/textView49"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView49"
+            android:id="@+id/radioGroup"
+            android:layout_marginTop="5dp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I am In Surgery"
+                android:id="@+id/rb1"
+                android:checked="true"
+                android:layout_marginTop="5dp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I am out of Station"
+                android:id="@+id/rb2"
+                android:checked="false"
+                android:layout_marginTop="5dp" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other Reason"
+                android:id="@+id/rb3"
+                android:checked="false"
+                android:layout_marginTop="5dp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:inputType="textEmailAddress|textMultiLine"
+            android:lines="10"
+            android:minLines="2"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="10dp"
+            android:hint="Enter reason...." />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/reasonButton"
+            android:layout_below="@+id/etComments"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/rounded_button"
+            android:textColor="#ffffff"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:layout_alignParentRight="true" />
+    </LinearLayout>
+
+</LinearLayout>

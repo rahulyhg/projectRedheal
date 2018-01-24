@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ColorBackground"
+    tools:context="com.medoske.www.redheal_d.AddPackagesActivity">
+
+    <!--<include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_width="match_parent"
+
+        />-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/validationLayout"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView_package"
+            android:layout_above="@+id/editText15"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tipsbackground"
+            android:scaleType="fitXY"/>
+
+        <Spinner
+            android:id="@+id/spinner_clinicName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/etPackageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="Enter Package Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etActualPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText15"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Actual Price"
+                android:inputType="number|numberSigned|textMultiLine|numberDecimal"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/etDiscountPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText15"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Discount Price"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/etFrom"
+                android:layout_below="@+id/editText15"
+                android:drawableRight="@drawable/calender_icon"
+                android:hint="From"
+                android:focusable="false"
+                android:background="@drawable/border_background"
+                android:clickable="true"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:layout_marginRight="2dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/etTo"
+                android:layout_below="@+id/editText15"
+                android:drawableRight="@drawable/calender_icon"
+                android:hint="To"
+                android:clickable="true"
+                android:focusable="false"
+                android:background="@drawable/border_background"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spinner_period"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/etDescription"
+            android:layout_below="@+id/editText16"
+            android:maxLines="5"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:background="@drawable/border_background"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@color/colorAccent"
+            android:id="@+id/submitButton"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/editText17"
+            android:layout_marginTop="20dp"
+            android:clickable="true" />
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

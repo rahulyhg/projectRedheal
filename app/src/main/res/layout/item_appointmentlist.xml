@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    cardview:cardElevation="1dp"
+    cardview:cardBackgroundColor="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expand_button"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewpatient"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/placeholderimage" />
+
+            <TextView
+                android:text="ramnaidu"
+                android:id="@+id/name"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/imageViewpatient"
+                 />
+
+            <TextView
+                android:text="Dwaraka nagar,Vizag"
+                android:id="@+id/clinicName"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageViewpatient"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clinicName"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:layout_toEndOf="@+id/imageViewpatient"
+                android:layout_toRightOf="@+id/imageViewpatient"
+                android:text="10/10/2016"
+                android:id="@+id/dateText"/>
+
+        </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accept"
+                    android:id="@+id/conformText"
+                    android:textColor="@drawable/accept_selected_color"
+                    android:padding="5dp"
+                    android:textSize="16dp"
+                    android:fontFamily="monospace"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/rejectText"
+                    android:layout_toStartOf="@+id/rejectText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reject"
+                    android:id="@+id/rejectText"
+                    android:textColor="@drawable/reject_selected_color"
+                    android:padding="5dp"
+                    android:textSize="16dp"
+                    android:fontFamily="monospace"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp" />
+
+            </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

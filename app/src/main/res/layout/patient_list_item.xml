@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    cardview:cardElevation="2dp"
+    cardview:cardBackgroundColor="#fafafa"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rippleeffect_layout"
+        android:padding="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewpatient"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/placeholderimage" />
+
+        <TextView
+            android:id="@+id/txtFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageViewpatient"
+            android:layout_toEndOf="@+id/imageViewpatient" />
+
+        <TextView
+            android:id="@+id/txtRhid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RH1234567"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#787878"
+            android:textSize="12sp"
+            android:layout_below="@+id/txtFullName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageViewpatient"
+            android:layout_toEndOf="@+id/imageViewpatient" />
+
+        <TextView
+            android:id="@+id/txtReferenceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtRhid"
+            android:layout_below="@+id/txtRhid"
+            android:text="TextView"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

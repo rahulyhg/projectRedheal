@@ -1,0 +1,28 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipe_refresh_layout"
+    tools:context=".MainFragments.ActivityFragment"
+    android:orientation="vertical"
+    android:background="@color/ColorBackground"
+    >
+
+
+    <ListView
+        android:id="@+id/activityList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00ffffff"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtError"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+</android.support.v4.widget.SwipeRefreshLayout>

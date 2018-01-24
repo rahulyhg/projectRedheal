@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:id="@+id/main_content"
+    android:orientation="vertical"
+    android:elevation="5dp"
+    android:background="@color/ColorBackground"
+    >
+
+<!--
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:theme="@style/AppTheme.NoActionBar">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Diary"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/absents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:text="Absents"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        &lt;!&ndash; <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/SCBSwitch"
+            android:text="Availability    "
+            android:textColor="@color/colorWhite"
+            android:id="@+id/switch1"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:checked="false"
+            android:textStyle="bold" />&ndash;&gt;
+
+    </android.support.v7.widget.Toolbar>
+-->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/compactcalendar_view"
+            android:layout_width="fill_parent"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_height="220dp"
+            app:compactCalendarTargetHeight="250dp"
+            app:compactCalendarTextSize="12sp"
+            app:compactCalendarBackgroundColor="#fafafa"
+            app:compactCalendarTextColor="#d4706f6f"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="#a061c2bb"
+            app:compactCalendarCurrentDayBackgroundColor="#c5ff8800"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="@color/activity_backgroungColor"
+        android:layout_below="@+id/compactcalendar_view">
+
+
+        <ListView
+                android:visibility="gone"
+                android:id="@+id/bookings_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#00ffffff"
+                android:dividerHeight="0dp">
+            </ListView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/txtError"
+                android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
